@@ -1,11 +1,9 @@
-import "./App.css";
+// relative imports
+import { Header } from "./components/layout/Header";
 
-function App() {
-  return (
-    <div className="App">
-      <h1>Hello typescript</h1>
-    </div>
-  );
-}
-
-export default App;
+export const App = () => (
+  <div className="App">
+    <h1>Hello typescript</h1>
+    <Header />
+  </div>
+);
