@@ -2,6 +2,9 @@
 import { FaPizzaSlice } from "react-icons/fa";
 import { CgAddR } from "react-icons/cg";
 
+// relative imports
+import imagesrc from "../../assets/fireworks.png";
+
 export const Header = () => {
   const x = 1;
 
@@ -9,7 +12,7 @@ export const Header = () => {
     <header className="header" data-testid="header">
       <nav>
         <div className="logo">
-          <img src="../../assets/fireworks.png" alt="fireworks-logo" />
+          <img src={imagesrc} alt="fireworks-logo" width="50px" height="50px" />
         </div>
 
         <div className="settings">
